@@ -1,0 +1,15 @@
+.check-status-wrapper {
+  margin: auto;
+}
+
+.check-status-wrapper .server-status-text {
+  text-align: center;
+  min-height: 20px;
+}
+
+.check-status-wrapper .btn {
+  margin: auto;
+  width: 278px;
+  height: 65px;
+  color: #fff;
+}

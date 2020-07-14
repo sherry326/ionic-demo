@@ -1,0 +1,7 @@
+{
+  "name": "myAppBI",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

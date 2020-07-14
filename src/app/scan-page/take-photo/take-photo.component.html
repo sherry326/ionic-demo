@@ -1,0 +1,16 @@
+<div class="check-status-wrapper">
+    <ion-button color="dark" class="check-status-btn btn" (click)="checkBackendStatus()">
+        <ion-label>Check Server Status</ion-label>
+    </ion-button>
+
+    <p class="server-status-text">
+        <app-check-loading [checkLoadingFlag]="checkLoadingFlag">
+        </app-check-loading>
+
+        <span *ngIf="enableTakePhotoFlag">Server: OK</span>
+    </p>
+
+    <ion-button color="dark" class="teke-photo-btn btn" disabled={{!enableTakePhotoFlag}} (click)="takePhoto()">
+        <ion-label>take photo & upload it</ion-label>
+    </ion-button>
+</div>

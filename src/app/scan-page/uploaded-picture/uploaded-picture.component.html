@@ -1,0 +1,12 @@
+<div class="upload-pic-wrapper">
+    <p class="upload-pic-reminder">
+        Your upload picture:
+    </p>
+
+    <app-page-loading [picLoadingFlag]="picLoadingFlag">
+    </app-page-loading>
+
+    <div class="upload-pic-wrapper" *ngIf="!picLoadingFlag">
+        <ion-img [src]="userUploadedImg"></ion-img>
+    </div>
+</div>
